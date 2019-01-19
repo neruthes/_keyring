@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Neruthes Keyring</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style media="screen">
+    @import url(/fonts/seravek.css);
+	* {
+		text-rendering: optimizeLegibility;
+		box-sizing: border-box;
+	}
+	body {
+		font-family: Seravek, 'Myriad Pro', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'Segoe UI', 'Lucida Grande', Arial, 'Arial-Black', 'Arial Black', sans-serif;
+		font-size: 20px;
+		font-weight: 200;
+        line-height: 1.5em;
+		color: #000;
+		min-height: 1500px;
+		padding: 0;
+		margin: 0;
+		background: #FAFAFA;
+	}
+    .cont {
+        padding: 0 15px;
+    }
+	.header a:link, .header a:visited, .header a:hover, .header a:active, .footer a {
+		display: block;
+		color: inherit;
+		text-decoration: inherit;
+	}
+	.header {
+		padding: 100px 0;
+		margin: 0 auto;
+	}
+    .header,
+    .content,
+    .footer {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    .content {
+		background: #FFF;
+		max-width: 720px;
+		padding: 60px 0 30px;
+		margin: 0 auto 50px;
+		border-radius: 4px;
+		box-shadow: rgba(0, 0, 0, 0.024322) 0 0 4px;
+	}
+	header h1, header p {
+		font-weight: 200;
+		text-align: center;
+		/* width: 100%; */
+		margin: 0;
+	}
+	header h1 {
+		font-size: 48px;
+		padding: 20px 0 10px;
+	}
+	header p {
+		line-height: 1.45em;
+		padding: 10px 0;
+	}
+	.section {
+		min-height: 100px;
+		max-width: 540px;
+		padding: 20px 0 10px;
+		margin: 0 auto 10px;
+		background-size: 100px;
+		overflow: hidden;
+	}
+	.section h2 {
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 42px;
+		color: #2B8CD2;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		padding: 8px 0 0;
+		margin: 0 0 12px 0;
+	}
+    .section ul, .section li {
+	}
+	.section ul {
+		display: block;
+		font-weight: 200;
+		padding: 0;
+		margin: 0;
+	}
+	.section ul li {
+		display: block;
+		padding: 0 0 15px;
+		margin: 0;
+	}
+	.section ul li a h3, .section ul li a p {
+		color: #FFF;
+	}
+	.section ul li a {
+		color: #2B8CD2;
+		text-decoration: none;
+	}
+    .section ul li a.disabled {
+		color: #999;
+		text-decoration: none;
+	}
+	footer {
+		font-size: 14px;
+		line-height: 22px;
+		text-align: center;
+		padding: 50px 0;
+	}
+    </style>
+    <style media="screen">
+    .section ul li span {
+        font-variant-numeric: tabular-nums lining-nums;
+    }
+    .key-name {
+        font-weight: 400;
+    }
+    .key-annotation {
+        color: #999;
+    }
+    .key-fp {
+        display: table;
+    }
+    .key-fp > span {
+        display: inline-block;
+    }
+    .key-title,
+    .key-name,
+    .key-annotation,
+    .key-fp,
+    .key-links {
+        text-align: center;
+        display: block;
+    }
+    .key-links {
+        color: #DDD !important;
+    }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="header">
+            <header>
+                <h1>Neruthes Keyring</h1>
+                <p>
+                    <span style="display: inline-block">8069 0EBD 5991 1905 0EF9</span>
+                    <span style="display: inline-block">43AF 037F 2FB3 D5E2 F043</span>
+                </p>
+            </header>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2>Root Keys</h2>
+                <ul>
+                    <li>
+                        <span class="key-title">
+                            <span class="key-name">0001_D5E2F043</span>
+                            <span class="key-annotation">(2018, current)</span>
+                        </span>
+                        <span class="key-fp">
+                            <span>8069 0EBD 5991 1905 0EF9</span>
+                            <span>43AF 037F 2FB3 D5E2 F043</span>
+                        </span>
+                        <span class="key-links">
+                            <span><a href="./root_keys/0001_D5E2F043.asc">raw</a></span> |
+                            <span><a href="./root_keys/replacement_chain/0001_D5E2F043.txt.asc">proof</a></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="key-title">
+                            <span class="key-name">0000_EEF9762A</span>
+                            <span class="key-annotation">(deprecated)</span>
+                        </span>
+                        <span class="key-fp">
+                            <span>8F45 D723 57EE B6C5 5666</span>
+                            <span>2C8D 68A0 B4B6 EEF9 762A</span>
+                        </span>
+                        <span class="key-links">
+                            <span><a href="./root_keys/0000_EEF9762A.asc">raw</a></span> |
+                            <span><a disabled class="disabled">proof</a></span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Agent Keys</h2>
+                <ul>
+                    <li>
+                        <span class="key-title">
+                            <span class="key-name">0002_095ED892</span>
+                            <span class="key-annotation">(2019)</span>
+                        </span>
+                        <span class="key-fp">
+                            <span>6806 1AF0 C181 3884 EF11</span>
+                            <span>B50A 2AFD C3A9 095E D892</span>
+                        </span>
+                        <span class="key-links">
+                            <span><a href="./agent_keys/0002_095ED892.asc">raw</a></span> |
+                            <span><a href="./agent_keys/delegation_declarations/0002_095ED892_CA.txt.asc">delegation</a></span> |
+                            <span><a href="./agent_keys/delegation_declarations/0002_095ED892_DR.txt.asc">ownership</a></span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>
+                <a href="/">© 2019 Neruthes (a.k.a. Joy Neop)</a>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
